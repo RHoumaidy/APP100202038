@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartgateapps.logic.activities.ConfirmActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:text="Full Name"/>
+
+        <TextView
+            android:id="@+id/fullNameTxtV"/>
+
+        <TextView
+            android:text="Phone Number"/>
+
+        <TextView
+            android:id="@+id/phoneNumberTxtV"/>
+
+        <TextView
+            android:text="Email"/>
+
+        <TextView
+            android:id="@+id/emailTxtV"/>
+
+        <TextView
+            android:text="Ordering"/>
+
+        <TextView
+            android:id="@+id/typeTxtV"/>
+
+        <TextView
+            android:text="Quantity"/>
+
+        <TextView
+            android:id="@+id/quantityTxtV"/>
+
+        <TextView
+            android:text="Notes"/>
+
+        <TextView
+            android:id="@+id/infoTxtV"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_columnSpan="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:text="Location "
+            android:textSize="24sp"/>
+
+        <TextView
+            android:text="Area"/>
+
+        <TextView
+            android:id="@+id/areaTxtV"/>
+
+        <TextView
+            android:text="Street"/>
+
+        <TextView
+            android:id="@+id/streetTxtV"/>
+
+        <TextView
+            android:text="Building"/>
+
+        <TextView
+            android:id="@+id/buildingTxtV"/>
+
+        <TextView
+            android:text="Notes"/>
+
+        <TextView
+            android:id="@+id/notesTxtV"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2">
+
+            <ImageView
+                android:id="@+id/mapImgView"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="fitXY"/>
+
+            <ProgressBar
+                android:id="@+id/mapLoadingPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:background="@drawable/send_rqst_bg"
+            android:text="Confirm And Send"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </GridLayout>
+</ScrollView>

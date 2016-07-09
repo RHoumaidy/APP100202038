@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logic_logo"
+        android:layout_weight="30"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/aboutUsButton"
+        android:layout_below="@id/imageView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="45">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/price_txt_bg">
+
+            <com.smartgateapps.logic.activities.DigitTextView
+                android:id="@+id/digitalTextV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/header_station"/>
+
+
+        </RelativeLayout>
+
+        <com.smartgateapps.logic.activities.DigitTextView
+            android:id="@+id/priceTitleTxtV"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/price_title_bf"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/colorCyan"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/aboutUsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendOrderButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/about_us_bf"
+        android:onClick="onClick"
+        android:paddingBottom="@dimen/btn_padding_top_bottom"
+        android:paddingTop="@dimen/btn_padding_top_bottom"
+        android:text="About Us"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sendOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ourServicesButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/send_rqst_bg"
+        android:onClick="onClick"
+        android:paddingBottom="@dimen/btn_padding_top_bottom"
+        android:paddingTop="@dimen/btn_padding_top_bottom"
+        android:text="Send Order Request"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@id/ourServicesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/callUsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/send_rqst_bg"
+        android:onClick="onClick"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="@dimen/btn_padding_top_bottom"
+        android:paddingTop="@dimen/btn_padding_top_bottom"
+        android:text="Our Services"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:gravity="center"/>
+
+    <com.smartgateapps.logic.activities.FlipTextView
+        android:id="@id/callUsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="@drawable/about_us_bf"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>
